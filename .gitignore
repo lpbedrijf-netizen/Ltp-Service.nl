@@ -1,0 +1,15 @@
+node_modules
+.vercel
+.tanstack
+.grok
+artifacts
+screenshots
+attachments
+ltpservice-site.zip
+.project_id
+.node_modules.lock
+*.log
+.env
+.env.*
+dist
+.output
