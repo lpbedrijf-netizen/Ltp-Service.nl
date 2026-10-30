@@ -118,7 +118,7 @@
   <main id="top">
     <section class="wrap hero">
       <div>
-        <p class="kicker">Zoetermeer</p>
+        <p class="kicker">Zoetermeer · Zuid-Holland</p>
         <h1>Efficientie en precisie</h1>
         <p class="lead" data-nl="Drie vakgebieden. Eén manier van werken." data-pl="Trzy dziedziny. Jeden sposób pracy.">Drie vakgebieden. Eén manier van werken.</p>
       </div>
@@ -162,13 +162,13 @@
       <div class="wrap facts">
         <div>
           <p class="kicker" data-nl="Vestiging" data-pl="Siedziba">Vestiging</p>
-          <address>Van Leeuwenhoeklaan 386<br>2713 RK Zoetermeer</address>
+          <address>Van Leeuwenhoeklaan 386<br>2713 RK Zoetermeer<br>Zuid-Holland</address>
           <div class="contact">
             <a href="tel:+31616422063"><span data-nl="Telefoon" data-pl="Telefon">Telefoon</span><span>06 1642 2063</span></a>
             <a href="mailto:lpbedrijf@gmail.com"><span>E-mail</span><span>lpbedrijf@gmail.com</span></a>
           </div>
           <div class="actions">
-            <a href="https://www.google.com/maps/search/?api=1&query=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer" target="_blank" rel="noreferrer" data-nl="Route" data-pl="Dojazd">Route</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer,+Zuid-Holland" target="_blank" rel="noreferrer" data-nl="Route" data-pl="Dojazd">Route</a>
             <button type="button" id="copy" data-nl="Kopieer adres" data-pl="Kopiuj adres" data-done-nl="Gekopieerd" data-done-pl="Skopiowano">Kopieer adres</button>
           </div>
         </div>
@@ -179,13 +179,13 @@
       </div>
       <div class="wrap">
         <div class="map">
-          <iframe id="map" title="LtpService op Google Maps" src="https://maps.google.com/maps?q=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer&z=16&hl=nl&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe id="map" title="LtpService op Google Maps" src="https://maps.google.com/maps?q=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer,+Zuid-Holland&z=16&hl=nl&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="wrap foot"><span>LtpService</span><span>Zoetermeer</span></div>
+    <div class="wrap foot"><span>LtpService</span><a href="privacy.html" data-nl="Privacy" data-pl="Prywatność">Privacy</a><span>Zoetermeer · Zuid-Holland</span></div>
   </footer>
   <script>
     var lang = "nl";
@@ -204,13 +204,13 @@
       document.querySelector(".langs").setAttribute("aria-label", next === "nl" ? "Taal" : "Język");
       var map = document.getElementById("map");
       map.title = next === "nl" ? "LtpService op Google Maps" : "LtpService w Google Maps";
-      map.src = "https://maps.google.com/maps?q=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer&z=16&hl=" + next + "&output=embed";
+      map.src = "https://maps.google.com/maps?q=Van+Leeuwenhoeklaan+386,+2713+RK+Zoetermeer,+Zuid-Holland&z=16&hl=" + next + "&output=embed";
     }
     document.getElementById("lang-nl").onclick = function () { apply("nl"); };
     document.getElementById("lang-pl").onclick = function () { apply("pl"); };
     document.getElementById("copy").onclick = function () {
       var button = this;
-      navigator.clipboard.writeText("Van Leeuwenhoeklaan 386\n2713 RK Zoetermeer").then(function () {
+      navigator.clipboard.writeText("Van Leeuwenhoeklaan 386\n2713 RK Zoetermeer\nZuid-Holland").then(function () {
         button.textContent = button.getAttribute("data-done-" + lang);
         setTimeout(function () { button.textContent = button.getAttribute("data-" + lang); }, 1800);
       });
