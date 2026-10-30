@@ -51,6 +51,8 @@
     .label { margin: 0; border-top: 1px solid var(--ink); padding-top: 1rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
     article { display: grid; align-items: center; gap: 2rem; border-bottom: 1px solid var(--line); padding-block: 3rem; scroll-margin-top: 12rem; }
     .frame { overflow: hidden; border: 1px solid var(--line); background: var(--panel); }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; }
+    .pair img + img { border-left: 1px solid var(--line); }
     .frame img { width: 100%; height: auto; transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1); }
     .frame:hover img { transform: scale(1.018); }
     h2 { margin: 0.75rem 0 0; font-family: var(--serif); font-weight: 400; font-size: 2.25rem; letter-spacing: -0.02em; line-height: 1.15; }
@@ -137,11 +139,14 @@
         </div>
       </article>
       <article id="bouw" class="reverse">
-        <div class="frame"><img src="art/bouw.jpg" width="1400" height="933" alt="Lijntekening van een bouwplaats" data-alt-nl="Lijntekening van een bouwplaats" data-alt-pl="Rysunek budowy"></div>
+        <div class="frame pair">
+          <img src="art/magazijn.jpg" width="1400" height="933" alt="Lijntekening van een magazijn" data-alt-nl="Lijntekening van een magazijn" data-alt-pl="Rysunek magazynu">
+          <img src="art/bouw.jpg" width="1400" height="933" alt="Lijntekening van een bouwplaats" data-alt-nl="Lijntekening van een bouwplaats" data-alt-pl="Rysunek budowy">
+        </div>
         <div>
           <p class="num">02</p>
           <h2 data-nl="Bouw" data-pl="Budownictwo">Bouw</h2>
-          <p data-nl="Bouwen, van voorbereiding tot oplevering." data-pl="Budowa, od przygotowania po odbiór.">Bouwen, van voorbereiding tot oplevering.</p>
+          <p data-nl="We werken op bouwplaatsen en in magazijnen." data-pl="Działamy na budowach i magazynach.">We werken op bouwplaatsen en in magazijnen.</p>
         </div>
       </article>
       <article id="web">
